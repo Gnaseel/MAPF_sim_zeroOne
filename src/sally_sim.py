@@ -1,5 +1,4 @@
 #!/usr/bin/python3
---testtesttest
 import rospy
 from visualization_msgs.msg import Marker, MarkerArray
 from geometry_msgs.msg import PoseWithCovarianceStamped, PoseStamped, Point,  Pose
@@ -12,7 +11,6 @@ import copy
 
 
 def publishRobot(robot_list):
-    marker_list=MarkerArray()
     marker_list=MarkerArray()
     id_list=MarkerArray()
     for idx, robot in enumerate(robot_list):
