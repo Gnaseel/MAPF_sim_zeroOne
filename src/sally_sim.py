@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+--testtesttest
 import rospy
 import json
 from enum import Enum
@@ -16,6 +16,7 @@ import copy
 def publishRobot(robot_list):
 
 
+    marker_list=MarkerArray()
     marker_list=MarkerArray()
     id_list=MarkerArray()
     for idx, robot in enumerate(robot_list):
