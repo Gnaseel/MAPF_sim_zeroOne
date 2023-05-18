@@ -1,0 +1,8 @@
+<launch>
+    
+    <param name="/use_sim_time" value="false" />
+    <param name="data_path" value="$(find sal_sim)/data" />
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find zero_simulator)/rviz/map.rviz" />
+    <node pkg="sal_sim" type="sally_sim.py"    name="simsim" output="screen"/>
+
+</launch>
