@@ -53,8 +53,9 @@ def publishRobot(robot_list):
     marker_list_pub.publish(marker_list)
     id_list_pub.publish(id_list)
 
+DATA_PATH = rospy.get_param("data_path")
 json_parser = JParser()
-json_data = json_parser.parse_json_file("/home/hgnaseel/zeroone_ws/src/sal_sim/src/map_meta.json")
+json_data = json_parser.parse_json_file(f"{DATA_PATH}/map_meta.json")
 
 def addNodeMarker(id, x, y):
     marker = Marker()
